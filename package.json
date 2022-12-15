@@ -7,7 +7,9 @@
     "setup-dbs": "psql -f db/setup.sql",
     "test": "jest",
     "dev": "nodemon listen.js",
-    "seed": "node ./db/run-seed.js"
+    "seed": "node ./db/run-seed.js",
+    "start": "node listen.js", 
+    "seed-prod": "NODE_ENV=production npm run seed"
   },
   "dependencies": {
     "cors": "^2.8.5",
